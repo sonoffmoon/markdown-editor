@@ -1,24 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+
+import Editor from "./components/editor.component";
+import Preview from "./components/preview.component";
+
+import { TextContext } from "./context/textContext";
+
+import "./App.css";
 
 function App() {
+  const [text, setText] = useState();
+  const value = { text, setText };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <TextContext.Provider value={value}>
+      {/* <header>
+        <h1>Markdown editor</h1>
+      </header> */}
+      <main>
+        <div className="wrapper">
+          <section className="editor">
+            <h2>Markdown</h2>
+            <Editor />
+          </section>
+          <section className="preview">
+            <h2>Preview</h2>
+            <Preview />
+          </section>
+        </div>
+      </main>
+    </TextContext.Provider>
   );
 }
 
