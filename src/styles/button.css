@@ -1,0 +1,25 @@
+.btn {
+  padding: 0.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 3px;
+  background-color: var(--btn-color);
+  margin-bottom: 1rem;
+}
+
+.btn svg {
+  height: 2.4rem;
+  width: 2.4rem;
+  stroke: var(--text-color);
+}
+
+.btn svg path {
+  fill: var(--text-color);
+}
+
+.btn:hover {
+  background-color: var(--btn-color-hover);
+  cursor: pointer;
+}

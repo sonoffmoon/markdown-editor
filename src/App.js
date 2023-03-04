@@ -5,28 +5,40 @@ import Preview from "./components/preview.component";
 
 import { TextContext } from "./context/textContext";
 
+import Button from "./components/button.component";
+import { ReactComponent as IconLightTheme } from "./icons/icon-theme-light.svg";
+import { ReactComponent as IconDarkTheme } from "./icons/icon-theme-dark.svg";
 import "./App.css";
 
 function App() {
   const [text, setText] = useState();
   const value = { text, setText };
 
+  const [theme, setTheme] = useState("light");
+  const switchTheme = () => {
+    if (theme === "light") {
+      setTheme("dark");
+    } else setTheme("light");
+  };
+
   return (
     <TextContext.Provider value={value}>
-      {/* <header>
-        <h1>Markdown editor</h1>
-      </header> */}
-      <main>
+      <main data-theme={theme}>
         <div className="wrapper">
           <section className="editor">
-            <h2>Markdown</h2>
             <Editor />
           </section>
           <section className="preview">
-            <h2>Preview</h2>
             <Preview />
           </section>
         </div>
+        <section className="settings">
+          <Button
+            className={"btn"}
+            onClick={switchTheme}
+            content={theme === "light" ? <IconLightTheme /> : <IconDarkTheme />}
+          />
+        </section>
       </main>
     </TextContext.Provider>
   );

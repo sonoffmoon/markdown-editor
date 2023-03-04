@@ -7,7 +7,9 @@ html {
 }
 
 body,
-html {
+html,
+#root,
+main {
   height: 100%;
 }
 
@@ -15,11 +17,14 @@ body {
   margin: 0;
 
   font-family: "Roboto";
-  color: #333;
-  background-color: aliceblue;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  color: var(--text-color);
+  background-color: var(--main-background);
 }
 
 code {

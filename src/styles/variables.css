@@ -1,0 +1,41 @@
+:root {
+  --text-color: #333;
+  --main-background: aliceblue;
+
+  --editor-text: #333;
+  --editor-background: rgb(245, 255, 255);
+
+  --preview-background: rgb(245, 245, 255);
+
+  --btn-color: rgb(225, 241, 255);
+  --btn-color-hover: rgb(214, 236, 255);
+
+  --pre-background-color: rgb(241, 241, 241);
+
+  --code-color: rgb(60, 179, 113);
+  --code-background-color: rgb(241, 241, 241);
+
+  --anchor-color: rgb(102, 47, 47);
+  --anchor-color-hover: rgb(151, 47, 47);
+}
+
+[data-theme="dark"] {
+  --text-color: rgb(238, 238, 238);
+  --main-background: #333;
+
+  --editor-text: rgb(238, 238, 238);
+  --editor-background: #666;
+
+  --preview-background: #666;
+
+  --btn-color: #444;
+  --btn-color-hover: #555;
+
+  --pre-background-color: #555;
+
+  --code-color: rgb(108, 214, 156);
+  --code-background-color: #555;
+
+  --anchor-color: rgb(255, 255, 224);
+  --anchor-color-hover: rgb(240, 240, 211);
+}

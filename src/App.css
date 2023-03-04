@@ -1,10 +1,36 @@
+body {
+  transition: all 0.6s;
+  color: var(--text-color);
+  background-color: var(--main-background);
+}
+
+p,
+ul,
+ol {
+  line-height: 2.4rem;
+}
+
 .wrapper {
   font-size: 1.6rem;
 
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 90vh;
+  display: flex;
   width: 95vw;
-  gap: 4rem;
+  height: 95%;
+  gap: 3rem;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.settings {
+  padding: 0.5rem 1rem;
+  display: flex;
+}
+
+.heading {
+  margin-bottom: 1rem;
 }
