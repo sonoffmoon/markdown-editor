@@ -12,11 +12,15 @@
 
   --pre-background-color: rgb(241, 241, 241);
 
-  --code-color: rgb(60, 179, 113);
+  --pre-code-border-color: #dbdbdb;
+
+  --code-color: rgb(0, 184, 113);
   --code-background-color: rgb(241, 241, 241);
 
   --anchor-color: rgb(102, 47, 47);
   --anchor-color-hover: rgb(151, 47, 47);
+
+  --horizontal-rule-color: #999;
 }
 
 [data-theme="dark"] {
@@ -38,4 +42,6 @@
 
   --anchor-color: rgb(255, 255, 224);
   --anchor-color-hover: rgb(240, 240, 211);
+
+  --horizontal-rule-color: #999;
 }

@@ -1,19 +1,27 @@
-* {
+*,
+::before,
+::after {
   box-sizing: border-box;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root,
+.main {
+  height: 100vh;
 }
 
 html {
   font-size: 62.5%;
 }
 
-body,
-html,
-#root,
-main {
-  height: 100%;
-}
-
 body {
+  font-size: medium;
   margin: 0;
 
   font-family: "Roboto";
@@ -22,9 +30,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main {
+.main {
   color: var(--text-color);
   background-color: var(--main-background);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0 1rem 1rem 1rem;
+  /* gap: 3rem; */
+  /* margin: 3rem; */
 }
 
 code {

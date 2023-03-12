@@ -23,7 +23,7 @@ function App() {
 
   return (
     <TextContext.Provider value={value}>
-      <main data-theme={theme}>
+      <main className="main" data-theme={theme}>
         <div className="wrapper">
           <section className="editor">
             <Editor />
@@ -37,6 +37,7 @@ function App() {
             className={"btn"}
             onClick={switchTheme}
             content={theme === "light" ? <IconLightTheme /> : <IconDarkTheme />}
+            title={"Change color theme"}
           />
         </section>
       </main>

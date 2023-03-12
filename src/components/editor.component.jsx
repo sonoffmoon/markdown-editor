@@ -25,7 +25,7 @@ const Editor = () => {
   return (
     <>
       <h2 className="heading">Markdown</h2>
-      <div className="controls">
+      <div className="editor__controls">
         <Button
           className="btn"
           title="Export as .md"
@@ -36,7 +36,7 @@ const Editor = () => {
         />
       </div>
       <textarea
-        className="markdown-input"
+        className="editor__input"
         onChange={handleChange}
         placeholder={"Start writing yout markdown here..."}
         spellCheck="false"

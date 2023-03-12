@@ -6,7 +6,6 @@
   border: none;
   border-radius: 3px;
   background-color: var(--btn-color);
-  margin-bottom: 1rem;
 }
 
 .btn svg {
