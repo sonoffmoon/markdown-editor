@@ -17,6 +17,10 @@
   border: none;
 }
 
+h1 {
+  font-size: 2em;
+}
+
 p img {
   max-width: 100%;
 }
